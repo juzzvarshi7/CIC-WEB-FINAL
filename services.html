@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHC IT Consultancy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }        
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        p {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #001B4C;
+        }
+
+        header img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px; /* Space between navigation items */
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            nav ul {
+                flex-direction: column;
+                gap: 10px; /* Space between navigation items in mobile view */
+            }
+        
+            header img {
+                width: 40px; /* Adjust the width for smaller screens */
+            }
+        }
+
+        footer {
+            background-color: #001B4C;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 70%;
+        }
+        
+        .footer-column h3{
+            font-size: 20px;
+            color: rgb(239, 230, 230);
+        }
+
+        .carousel-control-prev .carousel-control-prev-icon,
+        .carousel-control-next .carousel-control-next-icon {
+            background-color: blue; /* Change to your desired color */
+        }
+        
+        .carousel-control-prev .carousel-control-prev-icon {
+            margin-right: 120px;
+        }
+        
+        .carousel-control-next .carousel-control-next-icon {
+            margin-left: 120px;
+        }     
+
+        /* Add this CSS to control the size of the carousel images */
+        .carousel-inner img {
+            max-width: 70%;
+            max-height: 450px; /* Adjust the max height as needed */
+            object-fit: cover; /* This will ensure the image covers the defined area while maintaining aspect ratio */
+        }
+
+        .carousel-inner h2{
+            text-align: right;
+            color: #001B4C;
+            padding: 140px;
+            margin-left: 65%;
+            font-weight: bold;
+        }
+
+        .center-align h2 {
+            text-align: center;
+            color: #001B4C;
+            font-weight: bold;
+        }
+
+        .center-align h3 {
+            color: #001B4C;
+            font-size: larger; 
+            font-weight: 300;
+        }
+
+        .section-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cic-logo.png" alt="CIC Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="linkedin-icon.png" alt="LinkedIn Icon">
+    </header> <br>
+
+    <section id="home">
+        <div class="container">
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    <li data-target="#homeCarousel" data-slide-to="3"></li>
+                    <li data-target="#homeCarousel" data-slide-to="4"></li>
+                    <li data-target="#homeCarousel" data-slide-to="5"></li>
+                    <li data-target="#homeCarousel" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="ai-service.png" class="d-block w-100" alt="Slide 0">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Artificial Intelligence</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="rpa-service.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Robotic Process Automation (RPA)</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="web-service.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Web Application Development</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="mobile-service.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Mobile Application Development</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="uiux-service.png" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>UI/UX Design</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="vapt-service.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Vulnerability Assessment and Penetration Testing(VAPT)</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="erp-service.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>ERP Solutions</h2>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class = "section-box">
+        <section id="artificial-intelligence" class="py-5 center-align">
+            <div class="container">
+                <h2>Artificial Intelligence</h2>
+                <ul>
+                    <li>Development and optimization of algorithms and neural networks</li>
+                    <li>Porting of pre-trained and custom neural networks</li>
+                    <li>Web integrations</li>
+                    <li>Neural network implementations on heterogeneous platforms (CPU, GPU, Edge devices and, custom hardware accelerators)</li>
+                    <li>Exploratory Data Analysis and Analytics Dashboard</li>
+                    <li>Dataset preparation, labelling and validation</li>
+                    <br><a href="ai-service.html" class="btn btn-primary">Read More</a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="rpa" class="py-5 bg-light center-align">
+            <div class="container">
+                <h2>RPA (Robotic Process Automation)</h2>
+                <h3>Advantages of RPA</h3>
+                <ul>
+                    <li>Time-Saving: By automating repetitive tasks, RPA significantly reduces the time spent on manual labor, allowing your employees to concentrate on high-value activities.</li>
+                    <li>Error Reduction: Minimizes human errors, leading to improved accuracy and compliance.</li>
+                    <li>Cost Efficiency: Eliminates the need for additional manpower for routine tasks, resulting in cost savings.</li>
+                    <br><a href="rpa-service.html" class="btn btn-primary">Read More</a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="web-application" class="py-5 center-align">
+            <div class="container">
+                <h2>Web Application Development</h2>
+                <h3>Our Offerings</h3>
+                <ul>
+                    <li>Single Page Application</li>
+                    <li>Real Time Web Application</li>
+                    <li>Wordpress Websites</li>
+                    <li>RESTFUL Web Services</li>
+                    <li>Third Party Tools Integration</li>
+                    <li>Corporate Intranet</li>
+                    <li>E-Commerce</li>
+                    <li>E-Learning</li>
+                    <li>Bespoke Web Application</li>
+                    <br><a href="web-service.html" class="btn btn-primary">Read More</a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="mobile-application" class="py-5 bg-light center-align">
+            <div class="container">
+                <h2>Mobile Application Development</h2>
+                <ul>
+                    <li>Native Mobile App Development (Android & iOS)</li>
+                    <li>Geo-Location based Tracking Application</li>
+                    <li>Cross Platform Development (React Native & Ionic)</li>
+                    <li>Server-less Mobile Application</li>
+                    <li>UI/UX design</li>
+                    <li>Notification services</li>
+                    <li>Publish to iOS app store & Google play store</li>
+                    <br><a href="mobile-service.html" class="btn btn-primary">Read More</a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="ui-ux-design" class="py-5 center-align">
+            <div class="container">
+                <h2>UI/UX Design</h2>
+                <p>We Design Visually Stunning & User-Friendly Customer Experience.</p>
+                <p>CIC is an exclusive UI/UX Design Company building Digital experiences. We believe great businesses are built on Ideas & Innovation.</p>
+                <p>Our UX strategy is always focused on bringing better Web and Mobile products to end-users.</p>
+                <p>We apply principles of design thinking by listening to our valuable client’s feedback. We strongly believe that with the right strategy and planning, businesses can bring measurable outcomes.</p>
+                <br><a href="uiux-service.html" class="btn btn-primary">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="vapt" class="py-5 bg-light center-align">
+            <div class="container">
+                <h2>VAPT (Vulnerability Assessment and Penetration Testing)</h2>
+                <ul>
+                    <li>Providing the organization a detailed view of potential threats faced by an application.</li>
+                    <li>Helping the organization in identifying programming errors that lead to cyber-attacks.</li>
+                    <li>Provide risk management.</li>
+                    <li>Safeguarding the business from loss of reputation and money.</li>
+                    <li>Securing applications from internal and external attacks.</li>
+                    <li>Protecting the organization's data from malicious attacks.</li>
+                    <br><a href="vapt-service.html" class="btn btn-primary">Read More</a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class = "section-box">
+        <section id="erp-solutions" class="py-5 center-align">
+            <div class="container">
+                <h2>ERP Solutions</h2>
+                <p>ERP essentially provides a single integrated system that manages the day to day business transactions and handles real-time data in multiple areas of the organization, such as sales purchasing, manufacturing, inventory management, accounting, Human resources, etc.</p>
+                <p>In today’s business world, It’s impossible to ignore the impact of ERP. It communicates all pertinent data to the various departments as needed inside and outside the organization.</p>
+                <p>We are pioneers in SAP and MES end to end implementations, rollouts, migrations, system integrations and global supports. Our ERP Suite consists SAP, MES and DMS. By implementing ERP in combination with the implementation of MES, a company is expected to have high competitiveness and reduce production costs and increase compliance with regulatory requirements.</p>
+                <br><a href="erp-service.html" class="btn btn-primary">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="index.html#home"></a>Home</li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li>Application Development</li>
+                <li>ERP Solutions</li>
+                <li>BPO (ITES)</li>
+                <li>Cloud Services</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Registered Office</h3>
+            <p>CHG IT CONSULTANCY PVT LTD,</p>
+            <p>STPI Technology Incubation Centre, Taramani,</p>
+            <p>Chennai - 600113, Tamil Nadu, INDIA</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@cicgogo.com</p>
+            <p>Phone: +81 03-3496-1571</p>
+            <p>Website: www.cicgogo.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Parent Office</h3>
+            <p>CIC Corporation, 2-16-4 Dogenzaka,</p>
+            <p>Shibuya-ku, Tokyo, 150-0043, Japan</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

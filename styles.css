@@ -1,0 +1,524 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #001B4C;
+}
+
+header img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Space between navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Space between navigation items in mobile view */
+    }
+
+    header img {
+        width: 40px; /* Adjust the width for smaller screens */
+    }
+}
+
+/* Carousel Styles */
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel .arrow {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.carousel-content {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Show two slides at a time */
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.slide img {
+    width: 50%;
+    height: 100%;
+}
+
+.slide-text {
+    padding: 20px;
+}
+
+.slide-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #001B4C;
+}
+
+.slide-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Intro Section Styles */
+#intro {
+    display: flex;
+    padding: 20px;
+}
+
+.intro-image-text {
+    display: flex;
+    align-items: center;
+}
+
+.intro-image {
+    width: 50%;
+    height: auto;
+}
+
+.intro-text {
+    padding: 20px;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #001B4C;
+}
+
+.intro-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.explore-events {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Recent Progress Section Styles */
+#recent-progress {
+    background-color: #001B4C;
+    padding: 10px;
+    color: #001B4C;
+}
+
+.recent-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.yellow-box {
+    background-color: #ffc107;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.progress-bullets {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.progress-bullets li {
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+.progress-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.progress-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #001B4C;
+}
+
+.progress-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more-yellow {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Products Section Styles */
+#products {
+    padding: 20px;
+}
+
+#products h2 {
+    color:#001B4C;
+    text-align: center;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.product-card {
+    flex: 1; /* Distribute space evenly */
+    min-width: 0; /* Prevent cards from shrinking below their content width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between cards */
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#001B4C;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-card:last-child {
+    margin-right: 0; /* Remove the margin from the last card */
+}
+
+.product-details {
+    display: flex;
+    padding: 20px;
+    background-color: #001B4C;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.product-details img {
+    width: 60%;
+    height: 50%;
+    margin-right: 20px;
+}
+
+.details-text {
+    padding: 20px;
+}
+
+.details-text img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.details-text p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+/* Services Section Styles */
+#services {
+    display: flex;
+    padding: 20px;
+    height: auto; /* Adjust height to auto for dynamic content */
+}
+
+.services-left {
+    width: 25%; /* Adjust width as needed */
+    padding: 20px;
+}
+
+.services-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #001B4C;
+    text-align: center;
+}
+
+.services-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.services-right {
+    width: 75%; /* Adjust width as needed */
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden */
+}
+
+.service-cards {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card {
+    min-width: 300px; /* Show more than two cards at a time */
+    height: auto; /* Adjust height to auto for dynamic content */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #001B4C;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-card .read-more {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left-arrow, .right-arrow {
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* Contact Us Section Styles */
+#contact {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.contact-left, .contact-right {
+    width: 25%;
+    margin: 10px;
+}
+
+.contact-left h2, .contact-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #001B4C;
+}
+
+.contact-left p, .contact-right p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-middle {
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.contact-bg .responsive-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-middle, .contact-right {
+        width: 100%;
+    }
+
+    .contact-bg .responsive-image {
+        width: 100%;
+    }
+
+    .contact-info {
+        position: static;
+        transform: none;
+        padding: 10px;
+    }
+}
+
+#about {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #001B4C;
+}
+
+footer {
+    background-color: #001B4C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 70%;
+}
+
+.footer-column h3{
+    font-size: 20px;
+    color: rgb(239, 230, 230);
+}
+
+.container h2{
+    text-align: center;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="cic-logo.png" alt="CIC Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="linkedin-icon.png" alt="LinkedIn Icon">
+    </header> <br>
+
+    <!-- Carousel -->
+    <section id="carousel" class="carousel">
+        <button class="arrow left-arrow">&lt;</button>
+        <div class="carousel-content">
+            <div class="slide">
+                <img src="image1.png" alt="Slide Image 1">
+                <div class="slide-text">
+                    <h2>Digitalize your Business with MIERUKA</h2>
+                    <p>MIERUKA gather and displays business data in interactive and customizable visualizations that enable users to monitor the health of a business, analyze processes, and provide them with actionable insights.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image2.png" alt="Slide Image 2">
+                <div class="slide-text">
+                    <h2>Unlock your organization's potential with Hyouka</h2>
+                    <p>Empowering transparency, fairness, and growth in your organization through advanced data analysis and performance tracking tools.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image3.png" alt="Slide Image 3">
+                <div class="slide-text">
+                    <h2>Welcome to QMALL</h2>
+                    <p>QMALL is an online learning application to help you master new skills and achieve your educational goals efficiently.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-image-text">
+            <img src="intro-image.png" alt="Intro Image" class="intro-image">
+            <div class="intro-text">
+                <h2>Explore Events</h2>
+                <p>Welcome to Cicgogo, your gateway to the latest in tech events, conferences, and workshops. Whether you're a seasoned professional or a curious enthusiast, our platform connects you with cutting-edge events from around the globe. Discover, learn, and network with industry leaders and innovators in fields ranging from AI and blockchain to cybersecurity and software development.</p>
+                <button class="explore-events">EXPLORE EVENTS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Progress Section -->
+    <section id="recent-progress">
+        <div class="recent-progress-header">
+            <div class="yellow-box">RECENT PROGRESS</div>
+            <ul class="progress-bullets">
+                <li>We recently completed the 10th batch of the JEC Course at Vivekanandha Arts and Science College for Women, Sankagiri.</li>
+                <li>We have successfully completed ISMS & QMS Surveillance Audit for this Financial Year.</li>
+            </ul>
+        </div>
+        <div class="progress-items">
+            <div class="progress-item">
+                <h3>MIERUKA</h3>
+                <p>MIERUKA is an information management tool that tracks KPIs, metrics, and critical data points relevant to manufacturing. Also, it generates customized reports such as equipment historical data and Annual product Quality reports.</p>
+                <button class="read-more-yellow">READ MORE</button>
+            </div>
+            <div class="progress-item">
+                <h3>HYOUKA</h3>
+                <p>Unlock the power of transparent and efficient performance evaluation with Hyouka. From streamlined goal-setting to automated salary revisions / performance incentives, Hyouka revolutionizes your organization's performance management.</p>
+                <button class="read-more-yellow">READ MORE</button>
+            </div>
+            <div class="progress-item">
+                <h3>WE ARE HIRING!</h3>
+                <p>Are you interested to join our team?</p>
+                <p>We have several openings...</p>
+                <button class="read-more-yellow">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product-cards">
+            <div class="product-card" onclick="showProductDetails(0)">
+                <img src="product1.png" alt="Product 1">
+                <h3>MIERUKA</h3>
+                <p>MIERUKA offers a visual representation of your crucial business data...</p>
+            </div>
+            <div class="product-card" onclick="showProductDetails(1)">
+                <img src="product2.png" alt="Product 2">
+                <h3>HYOUKA</h3>
+                <p>HYOUKA is the ultimate performance evaluation tool...</p>
+            </div>
+            <div class="product-card" onclick="showProductDetails(2)">
+                <img src="product3.png" alt="Product 3">
+                <h3>QMALL</h3>
+                <p>A secured customizable web-based assessment tool...</p>
+            </div>
+            <div class="product-card" onclick="showProductDetails(3)">
+                <img src="product4.png" alt="Product 4">
+                <h3>Saibo.ai</h3>
+                <p>A secured web-based Object-Detection and Classification tool...</p>
+            </div>
+            <div class="product-card" onclick="showProductDetails(4)">
+                <img src="product5.png" alt="Product 5">
+                <h3>MYMICE</h3>
+                <p>An easy to use mobile app to manage the lifecycle of your assets...</p>
+            </div>
+        </div>
+        <div class="product-details">
+            <img src="product-details-image.png" alt="Product Details Image">
+            <div class="details-text">
+                <img src="product-logo.png" alt="Product Logo">
+                <p>Product details will be shown here upon clicking on a product card...</p>
+                <button class="read-more-yellow">READ MORE</button>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-left">
+            <h2>SERVICES</h2>
+            <h3>What We Offer</h3>
+            <p>We provide a wide range of services to help your business grow and succeed in today's competitive market...</p>
+        </div>
+        <div class="services-right">
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="service1.png" alt="AI">
+                    <h3>Artificial Intelligence (AI)</h3>
+                    <p>Leverage AI to enhance decision-making and streamline operations with intelligent automation solutions.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service2.png" alt="RPA">
+                    <h3>Robotic Process Automation (RPA)</h3>
+                    <p>Automate repetitive tasks and improve efficiency with our RPA services, reducing operational costs.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service3.png" alt="VAPT">
+                    <h3>Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                    <p>Identify and mitigate vulnerabilities in your system to protect against potential security threats.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service4.png" alt="BPO (ITES)">
+                    <h3>Business Process Outsourcing (BPO/ITES)</h3>
+                    <p>Outsource non-core activities to us and focus on your core business processes for better growth.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service5.png" alt="UI/UX">
+                    <h3>UI/UX Design</h3>
+                    <p>Create engaging and user-friendly interfaces with our expert UI/UX design services.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service6.png" alt="Mobile Application">
+                    <h3>Mobile Application Development</h3>
+                    <p>Build intuitive and feature-rich mobile applications tailored to your business needs.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service7.png" alt="Web Application">
+                    <h3>Web Application Development</h3>
+                    <p>Develop robust and scalable web applications to enhance your digital presence.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+                <div class="service-card">
+                    <img src="service8.png" alt="ERP">
+                    <h3>Enterprise Resource Planning (ERP)</h3>
+                    <p>Integrate and streamline your business processes with our comprehensive ERP solutions.</p>
+                    <button class="read-more">READ MORE</button>
+                </div>
+            </div>
+            <button class="arrow right-arrow">&gt;</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>CIC is a fast-growing innovative I.T. company predominantly servicing Japanese companies with an approach towards high productivity and high quality in the emerging software technologies.</p>
+            <p>We believe that our highly skilled Software Engineers of India can collaborate well with high-quality Japanese technologies to bring out the best innovative solutions. Our dedicated skilled Software Engineers have been consistently delivering innovative solutions to the complex software requirements of our esteemed clients.</p>
+            <p>We are a subsidiary of a Japanese Information Technology company offering futuristic services and solutions in various fields of Web Applications, Mobile Apps, Artificial Intelligence, Server database management, Manufacturing Execution System Software Integration, Japanese Endowed Course Training, and Consulting.</p>
+        </div>
+    </section>   
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <div class="contact-left">
+                <h2>Contact Us</h2>
+                <p>CHG IT CONSULTANCY PVT LTD, STPI Technology Incubation Centre, Taramani, Chennai - 600113, Tamil Nadu, INDIA</p>
+            </div>
+            <div class="contact-middle">
+                <div class="contact-bg">
+                    <img src="contact-bg.jpg" alt="Contact Background" class="responsive-image" style="opacity: 0.7;">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="mail-icon.png" alt="Mail Icon">
+                        <p>info@cicgogo.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="phone-icon.png" alt="Phone Icon">
+                        <p>+81 03-3496-1571</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="website-icon.png" alt="Website Icon">
+                        <p>www.cicgogo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h2>Corporate Profile</h2>
+                <p><strong>Name of the Company:</strong> CHG IT Consultancy Private Limited (CIC)</p>
+                <p><strong>Date of Incorporation:</strong> February 26, 2016</p>
+                <p><strong>Managing Director:</strong> Sivakumar Dhandayutham</p>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="index.html#home"></a>Home</li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li>Application Development</li>
+                <li>ERP Solutions</li>
+                <li>BPO (ITES)</li>
+                <li>Cloud Services</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Registered Office</h3>
+            <p>CHG IT CONSULTANCY PVT LTD,</p>
+            <p>STPI Technology Incubation Centre, Taramani,</p>
+            <p>Chennai - 600113, Tamil Nadu, INDIA</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@cicgogo.com</p>
+            <p>Phone: +81 03-3496-1571</p>
+            <p>Website: www.cicgogo.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Parent Office</h3>
+            <p>CIC Corporation, 2-16-4 Dogenzaka,</p>
+            <p>Shibuya-ku, Tokyo, 150-0043, Japan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const leftArrow = document.querySelector('.services-right .left-arrow');
+        const rightArrow = document.querySelector('.services-right .right-arrow');
+        const serviceCards = document.querySelector('.service-cards');
+        const cards = document.querySelectorAll('.service-card');
+        const visibleCards = 3; // Number of visible cards, adjust as needed
+        const cardWidth = cards[0].offsetWidth + 20; // including margin
+        const maxPosition = (cards.length - visibleCards) * cardWidth;
+        let currentPosition = 0;
+    
+        leftArrow.addEventListener('click', () => {
+            if (currentPosition > 0) {
+                currentPosition -= cardWidth;
+                serviceCards.style.transform = `translateX(-${currentPosition}px)`;
+            }
+        });
+    
+        rightArrow.addEventListener('click', () => {
+            if (currentPosition < maxPosition) {
+                currentPosition += cardWidth;
+                serviceCards.style.transform = `translateX(-${currentPosition}px)`;
+            }
+        });
+    });    
+</script>
+</body>
+</html>
